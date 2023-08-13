@@ -1,0 +1,71 @@
+.heroSection {
+  width: 100%;
+  padding-top: $section;
+  background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.75)
+    ),
+    url(bg.png);
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+
+  .heroImage,
+  .heroInfo {
+    width: 50%;
+
+    @media screen and (max-width: $md) {
+      width: 100%;
+    }
+  }
+
+  .heroInfo {
+    padding-left: $section * 1.75;
+
+    .heroInfoGreetings {
+      font-style: italic;
+    }
+
+    .whoAmI {
+      font-size: 3rem;
+
+      small {
+        font-size: 1rem;
+      }
+
+      @media screen and (max-width: $md) {
+        font-size: 2rem;
+      }
+    }
+
+    .heroInfoDescription {
+      margin: $section * 0.25 0;
+    }
+
+    @media screen and (max-width: $md) {
+      padding: 1rem;
+      text-align: center;
+      padding-bottom: $section;
+    }
+  }
+
+  .btnsSection {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+
+    @media screen and (max-width: $sm) {
+      flex-direction: column;
+    }
+  }
+
+  @media screen and (max-width: $md) {
+    flex-direction: column;
+  }
+}
