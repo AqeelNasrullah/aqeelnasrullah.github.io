@@ -6,9 +6,8 @@ const HeroInfo = () => {
       <p className="heroInfoGreetings">
         Hey!!! Welcome here, Good to see you...
       </p>
-      <h1 className="whoAmI">
-        <small>I am</small> Aqeel Nasrullah
-      </h1>
+      <h5 className="iAm">I am</h5>
+      <h1 className="whoAmI">Aqeel Nasrullah</h1>
       <h2>MERN Stack Developer</h2>
       <p className="heroInfoDescription">
         With over 2+ years of immersive experience in MERN Stack development, I

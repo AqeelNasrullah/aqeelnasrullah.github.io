@@ -1,0 +1,35 @@
+.aboutSection {
+  padding: $section $section * 1.75;
+  background-color: $dimorange;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  .aboutImage {
+    width: 50%;
+
+    @media screen and (max-width: $md) {
+      display: none;
+    }
+  }
+
+  .aboutDescription {
+    width: 50%;
+
+    h1 {
+      margin-bottom: 1rem;
+    }
+
+    p {
+      margin-bottom: 1rem;
+    }
+
+    @media screen and (max-width: $md) {
+      width: 100%;
+    }
+  }
+
+  @media screen and (max-width: $md) {
+    padding: $section 1rem;
+  }
+}
