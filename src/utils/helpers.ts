@@ -16,7 +16,7 @@ export const getDate = (
       return moment(date).format("HH:mm A");
 
     case "datewithoutday":
-      return moment(date).format("MMMM YYYY");
+      return moment(date).format("MMMM, YYYY");
 
     default:
       return moment(date).format("MMMM DD, YYYY HH:mm A");

@@ -1,6 +1,6 @@
 import { experiences } from "../../utils/experiences";
 import { ExperienceType } from "../../utils/types";
-import ExperienceCard from "../shared/ExperienceCard";
+import ExperienceCard from "./ExperienceCard";
 
 const Experience = () => {
   return (

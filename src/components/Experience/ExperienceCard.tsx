@@ -1,10 +1,11 @@
-import { getDate, getDuration } from "../../../utils/helpers";
-import { ExperienceType } from "../../../utils/types";
-import Image from "../../UI/Image";
+import { getDate, getDuration } from "../../utils/helpers";
+import { ExperienceType } from "../../utils/types";
+import Image from "../UI/Image";
 
 interface ExperienceCardProps {
   srno: number;
   experience: ExperienceType;
+  inEducation?: boolean;
 }
 
 const ExperienceCard: React.FC<ExperienceCardProps> = ({
@@ -24,12 +25,13 @@ const ExperienceCard: React.FC<ExperienceCardProps> = ({
             <h3>{experience.company}</h3>
           </div>
         </div>
+
         <div className="experienceCardDetailsDuration">
           <p>
-            <small>from</small> {getDate(experience.from, "datewithoutday")}
+            <small>From</small> {getDate(experience.from, "datewithoutday")}
           </p>
           <p>
-            <small>to</small> {getDate(experience.to, "datewithoutday")}
+            <small>To</small> {getDate(experience.to, "datewithoutday")}
           </p>
           <hr />
           <p>

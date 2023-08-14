@@ -1,9 +1,7 @@
 const Skills = () => {
   return (
     <div className="skills">
-      <h2>
-        Software Development Lifecycle <small>(SDLC)</small> I Follow
-      </h2>
+      <h2>Methodology I Follow</h2>
       <ul>
         <li>
           <i className="fa-solid fa-bolt"></i>{" "}

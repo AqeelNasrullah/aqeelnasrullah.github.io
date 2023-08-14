@@ -38,12 +38,12 @@ export const technologies: Technology[] = [
     title: "React",
   },
   {
-    icon: REACT,
-    title: "React Native",
-  },
-  {
     icon: REDUX,
     title: "Redux",
+  },
+  {
+    icon: REACT,
+    title: "React Native",
   },
   {
     icon: REDUX,
@@ -51,7 +51,7 @@ export const technologies: Technology[] = [
   },
   {
     icon: NEXT,
-    title: "Next",
+    title: "NextJS",
   },
   {
     icon: NODE,
