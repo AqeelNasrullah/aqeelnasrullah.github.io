@@ -10,4 +10,8 @@
   h1 {
     margin-bottom: 1rem;
   }
+
+  @media screen and (max-width: $md) {
+    padding: $section 1rem;
+  }
 }

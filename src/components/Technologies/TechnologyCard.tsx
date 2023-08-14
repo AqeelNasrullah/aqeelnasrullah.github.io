@@ -11,7 +11,7 @@ const TechnologyCard: React.FC<TechnologyCardProps> = ({ technology }) => {
       <div className="technologyCardImg">
         <Image source={technology.icon} />
       </div>
-      <h3>{technology.title}</h3>
+      <p>{technology.title}</p>
     </div>
   );
 };

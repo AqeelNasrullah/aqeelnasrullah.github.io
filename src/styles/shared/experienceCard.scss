@@ -72,4 +72,25 @@
       }
     }
   }
+
+  @media screen and (max-width: $md) {
+    width: 100%;
+
+    &SrNo {
+      display: none;
+    }
+
+    &Details {
+      flex-direction: column;
+
+      &Company {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      &Duration {
+        width: 100%;
+      }
+    }
+  }
 }
