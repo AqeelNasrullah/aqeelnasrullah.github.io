@@ -53,6 +53,8 @@
     }
 
     &Duration {
+      min-width: 175px;
+
       p {
         display: flex;
         align-items: center;
