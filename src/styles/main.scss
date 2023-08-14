@@ -13,6 +13,10 @@
 // components stylesheets
 @import "./components/heroSection.scss";
 @import "./components/aboutSection.scss";
+@import "./components/experience.scss";
+
+// shared components stylesheets
+@import "./shared/experienceCard.scss";
 
 // ui components stylesheets
 @import "./ui/button.scss";

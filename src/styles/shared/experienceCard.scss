@@ -1,0 +1,75 @@
+.experienceCard {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  &:nth-child(2n) {
+    align-self: flex-end;
+  }
+
+  &SrNo {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 1.5rem;
+    background-color: $dark;
+    color: $light;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &Details {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    box-shadow: 0 0 1rem $dimgray;
+    border-radius: 0.5rem;
+    flex: 1;
+
+    &Company {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+
+      &Img {
+        width: 6rem;
+        height: 6rem;
+        border-radius: 3rem;
+        border: 1px solid $dark;
+        overflow: hidden;
+        padding: 1rem;
+      }
+
+      &Title {
+        h1,
+        h3 {
+          margin: 0;
+        }
+      }
+    }
+
+    &Duration {
+      p {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+
+        small {
+          font-size: 0.8rem;
+          font-style: italic;
+          color: $dimgray;
+        }
+      }
+
+      hr {
+        border: 0.5px solid $dimgray;
+        margin: 0.5rem 0;
+      }
+    }
+  }
+}

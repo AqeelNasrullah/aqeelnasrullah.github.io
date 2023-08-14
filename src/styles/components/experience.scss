@@ -1,0 +1,13 @@
+.experience {
+  padding: $section $section * 1.75;
+
+  &List {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  h1 {
+    margin-bottom: 1rem;
+  }
+}

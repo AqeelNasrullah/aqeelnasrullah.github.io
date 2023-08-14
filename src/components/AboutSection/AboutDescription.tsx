@@ -15,8 +15,8 @@ const AboutDescription = () => {
       <p>
         Proficient in React, Next.js, Express, Node.js, MongoDB, MySQL,
         PostgreSQL, and React Native, I prioritize user experience and welcome
-        collaborative suggestions. Let's shape the future of web development
-        together!
+        collaborative suggestions. Let's shape the future of software
+        development together!
       </p>
     </div>
   );
