@@ -11,3 +11,8 @@ export interface ExperienceType {
   from: Date;
   to: Date;
 }
+
+export interface Technology {
+  icon: string;
+  title: string;
+}

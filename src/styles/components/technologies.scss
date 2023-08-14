@@ -1,0 +1,41 @@
+.technologies {
+  padding: $section $section * 1.75;
+  padding-top: 0;
+
+  h2 {
+    margin-bottom: 2rem;
+  }
+
+  &List {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .technologyCard {
+      flex: 1 0 200px;
+
+      &Img {
+        width: 100px;
+        margin: 0px auto;
+        margin-bottom: 1rem;
+
+        img {
+          width: 100%;
+          aspect-ratio: 3/2;
+          object-fit: contain;
+        }
+      }
+
+      h3 {
+        text-align: center;
+      }
+    }
+  }
+
+  @media screen and (max-width: $md) {
+    padding: $section 1rem;
+    padding-top: 0;
+  }
+}
