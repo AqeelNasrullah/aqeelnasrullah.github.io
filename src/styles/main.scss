@@ -10,6 +10,9 @@
   font-family: "Poppins", sans-serif;
 }
 
+// mixins
+@import "./mixins.scss";
+
 // components stylesheets
 @import "./components/heroSection.scss";
 @import "./components/aboutSection.scss";
@@ -17,6 +20,7 @@
 @import "./components/technologies.scss";
 @import "./components/skills.scss";
 @import "./components/education.scss";
+@import "./components/projects.scss";
 
 // ui components stylesheets
 @import "./ui/button.scss";

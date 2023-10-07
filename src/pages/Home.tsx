@@ -2,6 +2,7 @@ import AboutSection from "../components/AboutSection";
 import Education from "../components/Education";
 import Experience from "../components/Experience";
 import HeroSection from "../components/HeroSection";
+import Projects from "../components/Projects";
 import Skills from "../components/Skills";
 import Technologies from "../components/Technologies";
 
@@ -14,6 +15,7 @@ const Home = () => {
       <Technologies />
       <Skills />
       <Education />
+      <Projects />
     </div>
   );
 };

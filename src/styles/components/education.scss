@@ -77,6 +77,10 @@
 
           &Creds {
             width: 100%;
+
+            hr {
+              display: none;
+            }
           }
         }
       }

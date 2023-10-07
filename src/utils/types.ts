@@ -25,3 +25,19 @@ export interface Education {
   image: string;
   link?: string;
 }
+
+export type GitClientType = "github" | "gitlab" | "bitbucket" | "other";
+
+export interface ProjectType {
+  title: string;
+  category: string;
+  gallery: string[];
+  description?: string;
+  url?: string;
+  code?: {
+    client: GitClientType;
+    link: string;
+  };
+  status: "In Progress" | "Completed" | "Contributed";
+  isFeatured: boolean;
+}
