@@ -38,6 +38,12 @@ export const getDuration = (from: Date, to: Date) => {
       `${monthsAfterYears} Month${monthsAfterYears > 1 ? "s" : ""}`
     );
   }
+};
 
-  return "";
+export const getInitials = (str: string) => {
+  const splited: string[] = str.split(" ");
+  return splited.reduce(
+    (acc: string, item: string) => acc.concat(item.charAt(0).toUpperCase()),
+    ""
+  );
 };

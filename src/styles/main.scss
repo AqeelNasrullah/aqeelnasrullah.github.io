@@ -21,7 +21,13 @@
 @import "./components/skills.scss";
 @import "./components/education.scss";
 @import "./components/projects.scss";
+@import "./components/testimonials.scss";
 
 // ui components stylesheets
 @import "./ui/button.scss";
 @import "./ui/image.scss";
+
+.copyrights {
+  text-align: center;
+  margin-bottom: 1rem;
+}

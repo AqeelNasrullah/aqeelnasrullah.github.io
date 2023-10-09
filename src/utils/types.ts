@@ -41,3 +41,11 @@ export interface ProjectType {
   status: "In Progress" | "Completed" | "Contributed";
   isFeatured: boolean;
 }
+
+export type TestimonialPersonType = "client" | "colleague";
+
+export interface TestimonialType {
+  name: string;
+  type: TestimonialPersonType;
+  message: string;
+}

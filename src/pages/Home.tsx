@@ -5,6 +5,7 @@ import HeroSection from "../components/HeroSection";
 import Projects from "../components/Projects";
 import Skills from "../components/Skills";
 import Technologies from "../components/Technologies";
+import Testimonials from "../components/Testimonials";
 
 const Home = () => {
   return (
@@ -16,6 +17,11 @@ const Home = () => {
       <Skills />
       <Education />
       <Projects />
+      <Testimonials />
+      <p className="copyrights">
+        Copyrights &copy; {new Date().getFullYear()} - Developed &amp;
+        maintained by Aqeel Nasrullah
+      </p>
     </div>
   );
 };

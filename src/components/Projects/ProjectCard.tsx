@@ -50,7 +50,9 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
             placement="top"
             overlayInnerStyle={{ margin: "-4px" }}
           >
-            <p>{getGitClient(project.code?.client as GitClientType).icon}</p>
+            <a href="" target="_blank">
+              {getGitClient(project.code?.client as GitClientType).icon}
+            </a>
           </Tooltip>
           <a href={project.url} target="_blank">
             <FaGlobe />
