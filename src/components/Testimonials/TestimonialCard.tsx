@@ -4,9 +4,15 @@ import { FaQuoteLeft } from "react-icons/fa6";
 
 interface TestimonialCardProps {
   testimonial: TestimonialType;
+  setTestimonial: (value: TestimonialType) => void;
+  openModal: () => void;
 }
 
-const TestimonialCard: React.FC<TestimonialCardProps> = ({ testimonial }) => {
+const TestimonialCard: React.FC<TestimonialCardProps> = ({
+  testimonial,
+  setTestimonial,
+  openModal,
+}) => {
   const getType = (type: TestimonialPersonType) => {
     switch (type) {
       case "client":
@@ -26,7 +32,15 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({ testimonial }) => {
         <sup>
           <FaQuoteLeft />
         </sup>{" "}
-        {testimonial.message}
+        {testimonial.message.slice(0, 140)}...{" "}
+        <span
+          onClick={() => {
+            setTestimonial(testimonial);
+            openModal();
+          }}
+        >
+          Show more
+        </span>
       </p>
       <div>
         <div className="avatar">{getInitials(testimonial.name)}</div>
