@@ -45,3 +45,71 @@
     padding-top: 0;
   }
 }
+
+.allProjects {
+  width: 100%;
+  padding: $section $section * 1.75;
+
+  &Card {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    border: 1px solid $dark;
+
+    &Img {
+      max-width: 375px;
+      width: 100%;
+      height: 175px;
+      clip-path: polygon(0% 0%, 90% 0%, 100% 100%, 0% 100%);
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+      }
+    }
+
+    &Detail {
+      div {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        margin-bottom: 1rem;
+
+        a {
+          color: $dark;
+        }
+      }
+    }
+  }
+
+  &Modal {
+    padding: 1rem;
+
+    div {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 2rem;
+
+      a {
+        color: $dark;
+      }
+    }
+
+    &Description {
+      p {
+        margin-bottom: 1rem;
+      }
+
+      div {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 0;
+      }
+    }
+  }
+}

@@ -1,4 +1,5 @@
 import moment from "moment";
+import { projects } from "./projects";
 
 export const getDate = (
   date: Date,
@@ -47,3 +48,5 @@ export const getInitials = (str: string) => {
     ""
   );
 };
+
+export const getProjectById = (id: number) => projects[id - 1];

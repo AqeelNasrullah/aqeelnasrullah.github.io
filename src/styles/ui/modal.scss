@@ -8,6 +8,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  // overflow-y: auto;
 
   &Close {
     width: 30px;
@@ -29,5 +30,8 @@
     background-color: $light;
     border-radius: 1rem;
     min-height: 50px;
+    max-height: 500px;
+    overflow-y: auto;
+    overflow-x: hidden;
   }
 }
