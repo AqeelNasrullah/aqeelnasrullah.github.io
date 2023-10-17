@@ -23,10 +23,10 @@ const HeroInfo = () => {
         >
           Schedule a Meeting
         </Button>
-        <Button iconClasses="fa-solid fa-chevron-down" link>
+        {/* <Button iconClasses="fa-solid fa-chevron-down" link>
           {" "}
           Learn More
-        </Button>
+        </Button> */}
       </div>
     </div>
   );
