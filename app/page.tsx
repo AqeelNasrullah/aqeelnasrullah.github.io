@@ -42,8 +42,8 @@ export default function Home() {
           My Portfolio is Coming Soon!
         </h1>
         <p className="text-lg text-center max-w-md">
-          I'm currently working on my personal portfolio. Stay tuned for updates
-          on my projects and skills!
+          I&apos;m currently working on my personal portfolio. Stay tuned for
+          updates on my projects and skills!
         </p>
         <div className="text-2xl font-mono text-center bg-black bg-opacity-50 p-4 rounded-lg shadow-lg">
           {timeElapsed.days}d {timeElapsed.hours}h {timeElapsed.minutes}m{" "}
