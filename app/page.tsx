@@ -1,5 +1,6 @@
 "use client";
 
+import { Button } from "@/components/ui/button";
 import { useEffect, useState } from "react";
 
 export default function Home() {
@@ -36,22 +37,22 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen p-8 bg-gradient-to-r from-green-500 to-blue-600 text-white">
-      <main className="flex flex-col gap-8 items-center justify-center">
-        <h1 className="text-4xl font-extrabold text-center drop-shadow-lg">
+    <div className="flex flex-col items-center justify-center min-h-screen p-10 bg-gradient-to-br from-purple-600 to-blue-400 text-white">
+      <main className="flex flex-col gap-10 items-center justify-center">
+        <h1 className="text-5xl font-extrabold text-center drop-shadow-2xl animate-pulse">
           My Portfolio is Coming Soon!
         </h1>
-        <p className="text-lg text-center max-w-md">
+        <p className="text-xl text-center max-w-md italic">
           I&apos;m currently working on my personal portfolio. Stay tuned for
           updates on my projects and skills!
         </p>
-        <div className="text-2xl font-mono text-center bg-black bg-opacity-50 p-4 rounded-lg shadow-lg">
+        <div className="text-3xl font-mono text-center bg-white bg-opacity-20 p-6 rounded-lg shadow-2xl backdrop-blur-md">
           {timeElapsed.days}d {timeElapsed.hours}h {timeElapsed.minutes}m{" "}
           {timeElapsed.seconds}s
         </div>
       </main>
-      <footer className="flex gap-6 flex-wrap items-center justify-center mt-8">
-        <p className="text-sm text-center">
+      <footer className="flex gap-8 flex-wrap items-center justify-center mt-10">
+        <p className="text-sm text-center text-gray-200">
           Thank you for your patience and support!
         </p>
       </footer>
