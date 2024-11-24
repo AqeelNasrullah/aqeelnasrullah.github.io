@@ -36,7 +36,7 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen p-10 bg-gradient-to-br from-purple-600 to-blue-400 text-white">
+    <div className="flex flex-col items-center justify-center min-h-screen p-10 bg-gradient-to-br from-background to-purple-400 text-white">
       <main className="flex flex-col gap-10 items-center justify-center">
         <h1 className="text-5xl font-extrabold text-center drop-shadow-2xl animate-pulse">
           My Portfolio is Coming Soon!
